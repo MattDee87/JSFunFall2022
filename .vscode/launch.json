@@ -69,5 +69,18 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "5. Coercion",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/05-coercion/coercion.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
   ]
 }
