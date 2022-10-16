@@ -22,4 +22,22 @@ const getAnswer = (filePath) => {
   }
 };
 
-export { getAnswer };
+const readConsole = (callback) => {
+  /**
+   * @source https://gajus.medium.com/capturing-stdout-stderr-in-node-js-using-domain-module-3c86f5b1536d
+   */
+  let output = "";
+  const originalStdoutWrite = process.stdout.write.bind(process.stdout);
+  process.stdout.write = (chunk, encoding, callback) => {
+    if (typeof chunk === "string") {
+      output += chunk;
+    }
+
+    return originalStdoutWrite(chunk, encoding, callback);
+  };
+  callback();
+  process.stdout.write = originalStdoutWrite;
+  return output;
+};
+
+export { getAnswer, readConsole };
