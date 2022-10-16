@@ -82,5 +82,18 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "6. Control Flow",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/06-control-flow/control-flow-test-helper.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
   ]
 }
