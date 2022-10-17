@@ -6,3 +6,5 @@ let price = 5.99;
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+price = 6.99;
