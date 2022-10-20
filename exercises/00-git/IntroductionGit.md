@@ -14,3 +14,4 @@
 - Michele Edington
 - Hal Katzman
 - Michelle Waldenmaier
+-Andre Price
