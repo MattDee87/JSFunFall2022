@@ -11,3 +11,5 @@ let actualBMI = 27; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+isNotAtGoalWeight = targetBMI < actualBMI;
+console.log(isNotAtGoalWeight);
