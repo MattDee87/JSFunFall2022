@@ -11,5 +11,5 @@ let num2 = 20; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let isLargerNumber = num1 < num2;
+let isLargerNumber = num2 > num1;
 console.log(isLargerNumber);

@@ -17,3 +17,10 @@ let userInput2 = "39"; // e,g,
 
 isEqual = userInput1 === userInput2;
 console.log(isEqual)
+
+// Method 2
+if (userInput1 === userInput2) {
+  isEqual = true;
+} else {
+  isEqual = false;
+}
