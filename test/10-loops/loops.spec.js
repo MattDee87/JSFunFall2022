@@ -5,6 +5,9 @@ import {
   arrayLength,
   logWithWhile,
   logArrayWithFor,
+  add,
+  highestNumber,
+  isPalindrome,
 } from "./loops-test-helper.js";
 
 describe("10. Loops", () => {
@@ -47,6 +50,35 @@ describe("10. Loops", () => {
     it("should use a for loop", () => {
       const funcStr = logArrayWithFor.toString();
       expect(funcStr).to.match(/for\s*\(/);
+    });
+  });
+
+  describe("04-add-an-array", () => {
+    it('should return a sum of all of the numbers within the array "numbers"', () => {
+      expect(add([-1, 0.5, 2, 5])).to.equal(6.5);
+    });
+  });
+
+  describe("06-highest-number", () => {
+    it("should return the highest number in the array", () => {
+      const number1 = highestNumber([1, 10, 2, 3, 4]);
+      expect(number1).to.equal(10);
+      const number2 = highestNumber([-1, -5, -4]);
+      expect(number2).to.equal(-1);
+    });
+  });
+
+  describe("07-is-palidrome", () => {
+    it("should return true if a word is a palindrome", () => {
+      expect(isPalindrome("rotator")).to.be.equal(true);
+      expect(isPalindrome("noon")).to.be.equal(true);
+    });
+    it("should return false if a word is not a palindrome", () => {
+      expect(isPalindrome("difference")).to.be.equal(false);
+      expect(isPalindrome("wedding")).to.be.equal(false);
+    });
+    it("should use split", () => {
+      expect(isPalindrome.toString().includes("split")).to.equal(true);
     });
   });
 });

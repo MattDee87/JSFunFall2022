@@ -6,4 +6,18 @@ import logWithWhile from "../../exercises/10-loops/02-while-loop.js";
 
 import logArrayWithFor from "../../exercises/10-loops/03-for-loop.js";
 
-export { solvingProblems, arrayLength, logWithWhile, logArrayWithFor };
+import add from "../../exercises/10-loops/05-add-an-array.js";
+
+import highestNumber from "../../exercises/10-loops/06-highest-number.js";
+
+import isPalindrome from "../../exercises/10-loops/07-is-palidrome.js";
+
+export {
+  solvingProblems,
+  arrayLength,
+  logWithWhile,
+  logArrayWithFor,
+  add,
+  highestNumber,
+  isPalindrome,
+};
