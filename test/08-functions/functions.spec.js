@@ -15,11 +15,11 @@ describe("8. Functions", () => {
   describe("01-invoke-function", () => {
     it('should invoke the function "calculateTotal", passing in the subtotal of 50 and tax of 0.2 as arguments', () => {
       const [, args] = invokeFunction();
-      expect(args).to.deep.equal([50, 0.2]);
+      expect(args).to.deep.equal([50, 0.02]);
     });
-    it('"total" should equal 60 when the subtotal is $50 and the tax is 2%', () => {
+    it('"total" should equal 51 when the subtotal is $50 and the tax is 2%', () => {
       const [total] = invokeFunction();
-      expect(total).to.be.a("number").to.equal(60);
+      expect(total).to.be.a("number").to.equal(51);
     });
   });
   describe("02-print-greeting", () => {
