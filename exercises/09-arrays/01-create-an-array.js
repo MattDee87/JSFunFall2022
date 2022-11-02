@@ -4,3 +4,6 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let restaurants = ["McDonalds", "TacoBell", "Wendys",]
+console.log(restaurants);

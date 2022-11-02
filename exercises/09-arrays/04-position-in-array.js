@@ -19,3 +19,6 @@ let results = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let place = (results.indexOf("Jian Hou"));
+console.log(place);
