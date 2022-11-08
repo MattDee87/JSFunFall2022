@@ -18,6 +18,14 @@
 
 const generateLinks = (links) => {
   // WRITE YOUR ANSWER HERE
+
+
+  for (const i in links) {
+
+    console.log(`${i}: ${links[i]}`);
+}
+
+
 };
 
 // IGNORE THIS BELOW. It is for the tests.
