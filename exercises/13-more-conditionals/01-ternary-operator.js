@@ -11,3 +11,9 @@ let num = 8; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+let isEvenOrOdd = num >=8
+? console.log("even")
+
+: console.log("odd");
