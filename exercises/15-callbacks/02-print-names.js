@@ -13,6 +13,9 @@
  */
 
 // WRITE PART 1 OF YOUR ANSWER HERE
+const printer = (name) => {
+  console.log("Hello " + name + "!");
+};
 
 /**
  * PART 2
@@ -29,6 +32,9 @@
  */
 const printNames = (array, callback) => {
   // WRITE PART 2 OF YOUR ANSWER HERE
+  for (let item of array) {
+    callback(item);
+  }
 };
 
 // IGNORE THIS BELOW. It is for the tests.

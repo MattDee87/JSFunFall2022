@@ -24,6 +24,12 @@
 
 const findFirst = (arrayOfNum, callback) => {
   // WRITE YOUR ANSWER HERE
+  for (let value of arrayOfNum) {
+    let isTrue = callback(value);
+    if (isTrue) {
+      return value
+    }
+  }
 };
 
 // IGNORE THIS BELOW. It is for the tests.
