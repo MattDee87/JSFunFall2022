@@ -1,10 +1,15 @@
 import { expect } from "chai";
 import sinon from "sinon";
+import { readConsole } from "../getAnswer.js";
 
-import { calculate } from "../../exercises/15-callbacks/01-calculate.js";
-import { findFirst } from "../../exercises/15-callbacks/03-find-first.js";
+import {
+  calculate,
+  findFirst,
+  printerFn,
+  createCallToAction,
+  sendEmail,
+} from "./callback-test-helper.js";
 
-import printerFn from "../../exercises/15-callbacks/02-print-names.js";
 const { printer, printNames } = printerFn;
 
 describe("10. Callbacks", () => {
@@ -47,6 +52,35 @@ describe("10. Callbacks", () => {
       };
       const result = findFirst([1, 3, 7, 8, 20], isNumberDivisibleByThree);
       expect(result).to.equal(3);
+    });
+  });
+  describe("04-link-or-button", () => {
+    it('"createCallToAction" should be able to use "createLink", "createButton", and any other function that returns a string as a callback function', () => {
+      const createLabel = (text) => {
+        return `<label>${text} <input type="checkbox" class="hidden"></label>`;
+      };
+      const html = createCallToAction("Sign me up", createLabel).replace(
+        "\n",
+        ""
+      );
+      expect(html).to.equal(
+        '<div>Limited Time: Members Save 30%<br><label>Sign me up <input type="checkbox" class="hidden"></label></div>'
+      );
+    });
+  });
+  describe("05-send-email.js", () => {
+    it('"sendEmail" should accept a callback as a parameter and log the result from invoking a callback to the screen.', () => {
+      const scheduleMeeting = () => {
+        return "Do you have time on Monday at 1pm to discuss this?";
+      };
+
+      const output = readConsole(sendEmail.bind(null, scheduleMeeting)).replace(
+        "\n",
+        ""
+      );
+      expect(output).to.equal(
+        "Do you have time on Monday at 1pm to discuss this?"
+      );
     });
   });
 });
