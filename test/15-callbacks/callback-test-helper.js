@@ -11,7 +11,7 @@ import { createCallToAction } from "../../exercises/15-callbacks/04-link-or-butt
 const sendEmailStr = getAnswer("../exercises/15-callbacks/05-send-email.js");
 
 export const sendEmail = eval(`(fn) => {
-  ${sendEmailStr}
+  ${sendEmailStr.replace("askForUpdate", "() => {}")}
   try {
     return sendEmail(fn);
   } catch (err) {}

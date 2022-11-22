@@ -74,12 +74,9 @@ describe("10. Callbacks", () => {
         return "Do you have time on Monday at 1pm to discuss this?";
       };
 
-      const output = readConsole(sendEmail.bind(null, scheduleMeeting)).replace(
-        "\n",
-        ""
-      );
-      expect(output).to.equal(
-        "Do you have time on Monday at 1pm to discuss this?"
+      const output = readConsole(sendEmail.bind(null, scheduleMeeting));
+      expect(output).to.match(
+        /Do you have time on Monday at 1pm to discuss this\?/
       );
     });
   });
