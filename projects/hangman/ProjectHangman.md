@@ -111,7 +111,7 @@ If your instructors cannot grade your project because we cannot start or run you
   - Where, in the word, contains a letter that hasn't been guessed yet
   - How many guesses are left
 - Your game must be case insensitive. This means that when the player guesses a letter, the computer will treat lower case and upper case versions of a letter as the same character.
-- The game will stop when either a.) the player has guessed all the letters of b.) the play has made six incorrect guesses
+- The game will stop when either a.) the player has guessed all the letters or b.) the player has made six incorrect guesses
 - When the game finishes, let the play know if they have won and display the answer (the word the computer picked).
 - Please make sure your game text is easily readable. Use the new line characters (`\n`) where needed.
 
