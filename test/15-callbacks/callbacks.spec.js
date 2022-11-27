@@ -59,6 +59,7 @@ describe("10. Callbacks", () => {
       const createLabel = (text) => {
         return `<label>${text} <input type="checkbox" class="hidden"></label>`;
       };
+      // TODO account for the arguments being in a different order
       const html = createCallToAction("Sign me up", createLabel).replace(
         "\n",
         ""

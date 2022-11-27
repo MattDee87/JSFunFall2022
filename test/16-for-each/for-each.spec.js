@@ -14,7 +14,7 @@ describe("10. ForEach", () => {
   });
 
   describe("02-generate-links", () => {
-    it('should return a string of <a> tags, with one <a> tag per URL in the "links" array', () => {
+    it('"htmlStr" should be a string of <a> tags, with one <a> tag per URL in the "links" array', () => {
       const links = ["http://vanilla-js.com", "https://developer.mozilla.org"];
       const anchors = generateLinks(links);
       expect(anchors).to.be.a("string");
