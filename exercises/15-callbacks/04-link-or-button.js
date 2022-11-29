@@ -18,14 +18,14 @@ const createButton = (text) => {
 
 const createCallToAction = (clickableText) => {
   return (
-    "<div>Limited Time: Members Save 30%<br>" +
-    createLink(clickableText) +
+    "<div>Limited Time: Members Save 30%<br>" + 
+    createLink(clickableText) + createButton(text) +
     "</div>"
   );
 };
 
 // Update me too
-createCallToAction("Book Now");
+createCallToAction("Book Now", clickableText);
 
 // IGNORE THIS BELOW. It is for the tests.
 

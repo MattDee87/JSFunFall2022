@@ -9,3 +9,9 @@ const numbers = [1, 10, -2, 3, 4]; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+lowestNumber = math.min(...numbers)
+console.log(lowestNumber);
+
+numbers.forEach(numbers (lowestNumber));
