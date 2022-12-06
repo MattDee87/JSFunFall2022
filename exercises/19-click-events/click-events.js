@@ -9,6 +9,18 @@
    * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
    */
   // Write your answer here
+
+  const button1 = document.querySelector("#button1");
+  const handleClick = () => {
+    alert("you Clicked Me!");
+  };
+
+  button1.addEventListener("click", handleClick);
+
+
+
+
+
   /**
    * Problem 2: Disable a button that will charge a credit card.
    *
@@ -17,4 +29,14 @@
    * 2. Change the text to say e.g. "Loading ..." once it is clicked.
    */
   // Write your answer here
+
+  const button2 = document.querySelector("#button2");
+
+  const handleClick2 = () => {
+    button2.disabled = 'disabled';
+    button2.textContent = 'Loading ...';
+  };
+
+  button2.addEventListener("click", handleClick2);
+
 })();
