@@ -5,4 +5,16 @@
  */
 (function () {
   // Put your answers in here
+  const image = document.querySelector("img");
+  image.src = "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif";
+  console.log(image);
+
+ const links = document.querySelectorAll("myID");
+links.forEach(link => link.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript");
+console.log(links);
+
+const backgroundColor = document.querySelector("alert alert-info");
+
+
+
 })();
