@@ -255,7 +255,7 @@ In addition to submitting code, you will need to submit a hosted version of your
 
 ## Project Submission
 
-You will submit to following to both of you instructors over Slack by the project deadline:
+You will submit to following to both of you instructors by emailing it to Jamal (jamal@albanycancode.org) and Matina (matina@albanycancode.org) by the project deadline:
 
 1. The link to your Github repository.
 2. The link to you where your project is published. You can publish your project with Github Pages or you can a different hosting service.
