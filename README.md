@@ -36,7 +36,7 @@ Whenever you are ready to submit your work, you will need to [commit your work, 
 
 ## Resources
 
-- Projects: [First Project: Hangman](projects/hangman/ProjectHangman.md)
+- Projects: [First Project: Hangman](projects/hangman/ProjectHangman.md) | [Final Project: Document Object Model](projects/final-project/FinalProject.md)
 - Installation Guide: [Mac](docs/InstallationGuideMac.md) | [Windows](docs/InstallationGuideWindows.md) | [Linux](docs/InstallationGuideLinuxAndNVM.md)
 - JavaScript - [MDN](https://developer.mozilla.org/en-US/) (Unofficial JavaScript Manual) | [Tutorials](https://javascript.info/)
 - Command Line: [NPM Guide](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) | [Unix Crash Course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) | [Unix Cheat Sheet](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/unix_cheatsheet.html)
