@@ -87,7 +87,7 @@ Please note that with this project, there is a lot edge cases and a higher poten
 
 Create a web version of the game [Tic-Tac-Toe](https://www.youtube.com/watch?v=3qzcAMShotQ). This will be a two player game, where each person takes turns.
 
-[An example of "Tic-Tac-Toe" when you search for the game with Google](tic-tac-toe.gif)
+![An example of "Tic-Tac-Toe" when you search for the game with Google](tic-tac-toe.gif)
 
 #### UI Requirements
 
